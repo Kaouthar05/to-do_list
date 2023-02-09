@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Maven+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+
+}
+/* #e5e5dc */ 
+.container 
+{
+  font-size:30px;
+  background: linear-gradient(to bottom  right,  #7c607f,#4d7d97 ,#e5e5dc );  
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+  flex-direction: column;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px; 
+  height: 500px;
+  width: 430px;  
+  box-shadow: 10px 10px 10px rgba(112, 110, 110);
+  animation : container 2s  ;  
+  overflow: auto;
+}
+header
+{
+  font-family: 'EB Garamond', serif; 
+}
+@keyframes container { 
+  0%
+  { 
+    transform:translateY(-500px);
+  } 
+  100%
+  {
+    transform:translateY(0); 
+  } 
+}
+#list 
+{
+  list-style-type: none;
+  padding: 0;
+}
+.div1
+{
+  font-size: larger; 
+  margin-top: 12px;
+  text-shadow: 2px 2px  black;
+  margin-bottom: 10px;
+}
+.form-control
+{
+  margin:6px;
+  width: 300px; 
+  height: 50px; 
+  border-radius: 10px;
+  font-family: 'Maven Pro', sans-serif;
+}
+button
+{
+  color:   #ccc ;  
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  width: 66px;
+  font-family: 'Maven Pro', sans-serif;
+}
+.sortbutton
+{
+  width: 200px;
+  background-color: #7c607f;
+  margin-top: 20px;
+  margin-bottom : 20px;
+
+}
+.sortbutton:hover
+{
+  background-color: #665068;
+}
+aside span
+{
+  margin:6px;
+  width: 300px; 
+  font-size: 20Px;
+  height: 50px; 
+}
+aside
+{
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 17px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+button:hover
+{
+  background-color:   #2d292f ;  
+  color: #ccc;
+  border-radius: 10px;
+}
+
+
+i:hover 
+{
+  cursor: pointer;
+  color: rgb(104, 96, 96);
+  
+}
+.bi-plus-circle-fill
+{
+  font-size: 20px;
+ margin-top: 10px;
+}
+#remove-button 
+{
+  background-color: black;
+  cursor: pointer;
+  width: 30px;
+}
+
+ul
+{
+  width: 350px;
+  padding: 0px;
+  font-size: 20px;
+  /* font-family: 'Shadows Into Light', cursive; */
+  font-family: 'Kalam', cursive;
+  clear: both;
+}
+.trash-icon 
+{
+  cursor: pointer;
+  position: absolute;right: 477px; 
+
+}
+.checkmark 
+{
+  cursor: pointer;
+  margin-left: 10px;
+  position: absolute;right: 447px; 
+}
+.completed 
+{
+  text-decoration: line-through;
+  color: #d4d1d1;
+}
+.fade-out {
+  animation: fadeOut 0.5s ;
+}
+
+@keyframes fadeOut 
+{
+  from 
+  {
+    opacity: 1;
+  }
+  to 
+  {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
